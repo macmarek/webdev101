@@ -1,0 +1,64 @@
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+}
+
+.container > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.header {
+  background-color: lightgrey;
+}
+
+.footer {
+  border-top: 1px solid gray;
+}
+
+.main {
+  text-align: left;
+}
+
+tr {
+  margin: 10px;
+}
+
+td,
+th {
+  padding: 10px;
+}
+
+th {
+  border-bottom: 1px solid black;
+}
+
+@media all and (min-width: 600px) {
+  .aside {
+    flex: 1 0 0;
+  }
+}
+
+@media all and (min-width: 800px) {
+  .main {
+    flex: 3 0px;
+  }
+  .aside-1 {
+    order: 1;
+  }
+  .main {
+    order: 2;
+  }
+  .aside-2 {
+    order: 3;
+  }
+  .footer {
+    order: 4;
+  }
+}
+
+body {
+  padding: 2em;
+}
