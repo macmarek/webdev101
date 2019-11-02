@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>This is title</title>
+    <meta name="description" content="Very basic HTML page template" />
+    <meta name="author" content="Marek Czarnecki" />
+
+    <!-- <link rel="stylesheet" href="css/styles.css?v=1.0" /> -->
+  </head>
+
+  <body>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <p>
+      Lorem ipsum dolor sit amet, <em>consectetur adipiscing elit</em>. Aliquam
+      tempus scelerisque felis at finibus. Mauris sodales arcu neque, venenatis
+      pharetra tellus hendrerit id. Donec feugiat elit id urna finibus, bibendum
+      finibus augue facilisis.
+      <strong>Vivamus mauris nunc, semper at purus non</strong>, placerat dictum
+      arcu. Suspendisse ac placerat augue, eu euismod ligula. Praesent vel
+      turpis lorem. Pellentesque hendrerit, nisi quis ultricies viverra, dui sem
+      elementum lectus, id luctus nibh velit eget lectus. Vestibulum bibendum
+      vestibulum elit, non lobortis turpis aliquet sit amet. Aenean commodo
+      rutrum orci in molestie. Ut blandit urna augue, id finibus orci sagittis
+      et. Aliquam vestibulum fringilla metus, et blandit mauris suscipit a.
+    </p>
+
+    <hr />
+
+    <ul>
+      <li>List Item</li>
+      <li>List Item</li>
+      <li>List Item</li>
+      <li>List Item</li>
+    </ul>
+
+    <ol>
+      <li>List Item</li>
+      <li>List Item</li>
+      <li>List Item</li>
+      <li>List Item</li>
+    </ol>
+
+    <hr />
+
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Age</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Marek Czarnecki</td>
+          <td>marek@home.com</td>
+          <td>36</td>
+        </tr>
+        <tr>
+          <td>Adam P</td>
+          <td>adam@home.com</td>
+          <td>40</td>
+        </tr>
+        <tr>
+          <td>Kasia S</td>
+          <td>kasia@home.com</td>
+          <td>36</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr />
+
+    <form action="save.php" method="POST">
+      <div>
+        <label for="fname">First Name</label>
+        <input
+          type="text"
+          name="firstName"
+          id="fname"
+          placeholder="Enter first name"
+        />
+      </div>
+      <div>
+        <label for="lname">First Name</label>
+        <input type="text" name="lastName" id="lname" />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+      </div>
+      <div>
+        <label for="message">Message</label>
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+      </div>
+      <div>
+        <label for="gender">Gender</label>
+        <select name="gender" id="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </div>
+      <div>
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" value="35" />
+      </div>
+      <div>
+        <label for="bday">Birth date</label>
+        <input type="date" name="bday" id="bday" />
+      </div>
+      <br />
+      <input type="submit" name="submit" value="Submit" />
+    </form>
+
+    <button>Click me</button>
+
+    <hr />
+    <img src="./dog.jpg" alt="This is dog image" />
+
+    <!-- Quotations -->
+
+    <blockquote cite="http://nordea.com">
+      Mauris sollicitudin orci massa. Ut id diam ut lacus ultrices egestas.
+      Pellentesque placerat ipsum sem, aliquet rhoncus risus commodo vitae.
+      Aenean consequat vestibulum pellentesque. Ut blandit rhoncus tortor nec
+      laoreet. Fusce at pharetra lacus, sit amet aliquet nibh. Donec commodo,
+      est in fermentum tincidunt, arcu orci pharetra odio, non posuere urna
+      libero sed lacus. Phasellus vel lacus eu nibh condimentum interdum.
+      Suspendisse porttitor vulputate ligula. Nulla id ex vel ex eleifend
+      commodo vel at justo. Aenean maximus justo eu pharetra fringilla. Donec
+      auctor malesuada turpis id placerat. Duis quis ipsum quis enim volutpat
+      elementum. Cras purus mauris, tempor id porttitor at, scelerisque
+      fringilla nibh.
+    </blockquote>
+
+    <p>The <abbr title="Hypertext Markup Language">HTML</abbr> is cool!</p>
+
+    <!-- <script src="js/scripts.js"></script> -->
+  </body>
+</html>
