@@ -74,15 +74,26 @@ body {
 }
 
 .my-table th {
-  background-color: wheat;
+  background-color: #3f77d1;
+  color: white;
   text-align: left;
   min-width: 200px;
 }
 
-#footer,
 #menu {
+  background-color: #3f77d1;
+  padding: 15px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.logo {
+  width: 22px;
+  height: 22px;
+}
+
+#footer {
+  padding: 15px;
   background-color: black;
   color: white;
-  text-align: center;
-  padding: 10px;
 }
