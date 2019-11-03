@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <title>My Back Account</title>
+  </head>
+
+  <body>
+    <header>
+      <img src="./logo.svg" alt="Logo" width="20" height="20" />
+      <span>My Bank</span>
+    </header>
+    <article>
+      <hr />
+      <h1>Moje wydatki</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Data</th>
+            <th>Tytuł</th>
+            <th>Kwota</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>20.10.2019 8:30</td>
+            <td>Kwiaciarnia Gdańsk</td>
+            <td>30 PLN</td>
+          </tr>
+          <tr>
+            <td>21.10.2019 8:30</td>
+            <td>Cukiernia Pellowski</td>
+            <td>10 PLN</td>
+          </tr>
+          <tr>
+            <td>21.10.2019 12:00</td>
+            <td>Natka Bistro</td>
+            <td>21 PLN</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <hr />
+    </article>
+    <aside>
+      <form>
+        <div>
+          <label for="amount">Kwota PLN</label>
+          <input type="number" name="amount" id="amount" />
+        </div>
+
+        <div>
+          <label for="description">Opis transakcji</label>
+          <input type="text" name="description" id="description" />
+        </div>
+
+        <div>
+          <label for="date">Data transakcji</label>
+          <input type="date" name="date" id="date" />
+        </div>
+      </form>
+      <div>
+        <button>Zapisz</button>
+      </div>
+    </aside>
+
+    <footer>
+      &copy Marek Czarnecki 2019
+    </footer>
+  </body>
+</html>
