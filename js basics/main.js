@@ -226,9 +226,66 @@ function addNums(num1, num2) {
 addNums(5, 4);
 
 //arrow function
-
 const addNums2 = (num1 = 1, num2 = 1) => {
   num1 + num2; //return not needed
 };
 
 console.log(addNums2(5, 4));
+
+// ************* OO ***************/
+
+//constructor function
+function Person(firstName, lastName, dateOfBirth) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+  this.dateOfBirth = new Date(dateOfBirth);
+  this.getFullName = function() {
+    return `${this.firstName} ${this.lastName}`;
+  };
+}
+
+//proto
+Person.prototype.getBirthYear = function() {
+  return this.dateOfBirth.getFullYear();
+};
+
+//instantiate object
+const person1 = new Person("Marek", "Czarnecki", "01-05-1983");
+
+console.log(person1);
+
+const person2 = new Person("Adam", "P", "01-05-1983");
+console.log(person2);
+
+console.log(person1.getBirthYear()); //from proto
+console.log(person1.getFullName());
+
+//prototypes ... show __proto__
+
+//ES6 classes - the same thing under the hood - it's just syntactic sugar
+
+class Person2 {
+  constructor(firstName, lastName, dateOfBirth) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.dateOfBirth = new Date(dateOfBirth);
+    this.getFullName = function() {
+      return `${this.firstName} ${this.lastName}`;
+    };
+    this.getBirthYear = function() {
+      return this.dateOfBirth.getFullYear();
+    };
+  }
+}
+
+const person11 = new Person2("Marek", "Czarnecki", "01-05-1983");
+
+console.log(person11);
+console.log(person11.getBirthYear()); //from proto
+console.log(person11.getFullName());
+
+const person22 = new Person2("Adam", "P", "01-05-1983");
+console.log(person22);
+
+// ********************* DOM ***************/
+// see dom.js
