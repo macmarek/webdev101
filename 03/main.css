@@ -1,0 +1,99 @@
+body {
+  background-color: #f4f4f4;
+  color: #555555;
+  font: 16px normal Arial, Helvetica, sans-serif;
+  line-height: 1.6em;
+  margin: 0;
+}
+
+.clr {
+  clear: both;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+/* forms */
+
+.my-form {
+  padding: 20px;
+}
+
+.my-form .form-group {
+  padding-bottom: 15px;
+}
+
+.my-form label {
+  display: block;
+}
+
+.my-form input[type="text"],
+.my-form input[type="number"] {
+  padding: 8px;
+  width: 100%;
+}
+
+.button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  background: Red;
+  color: #fff;
+}
+
+#main {
+  float: right;
+  width: 70%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+#sidebar {
+  float: left;
+  width: 30%;
+  background-color: lightgrey;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.my-table {
+  padding: 20px;
+}
+
+.my-table td,
+.my-table th {
+  padding: 5px;
+}
+
+.my-table th {
+  background-color: #3f77d1;
+  color: white;
+  text-align: left;
+  min-width: 200px;
+}
+
+#menu {
+  background-color: #3f77d1;
+  padding: 15px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.logo {
+  width: 22px;
+  height: 22px;
+}
+
+#footer {
+  padding: 15px;
+  background-color: black;
+  color: white;
+}
