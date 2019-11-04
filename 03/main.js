@@ -42,7 +42,8 @@ function refreshTransactionsList() {
   document.getElementById("transations-table-body").innerHTML = tableHtml;
 }
 
-function onAddButtonClick() {
+function onAddButtonClick(e) {
+  e.preventDefault();
   var date = document.getElementById("date").value;
   var description = document.getElementById("description").value;
   var amount = document.getElementById("amount").value;
