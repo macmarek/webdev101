@@ -9,7 +9,7 @@ namespace webdev101api.Services
 {
     public class TransactionService
     {
-        private string _connectionString = @"Server=tcp:webdev101.database.windows.net,1433;Initial Catalog=websev101test;Persist Security Info=False;User ID=webdev_user;Password=();MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+        private string _connectionString = @"Server=tcp:webdev101.database.windows.net,1433;Initial Catalog=websev101test;Persist Security Info=False;User ID=webdev_user;Password=[];MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
 
         public List<Transaction> GetAll()
         {
