@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>My Bank Account</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="menu">
+        <img src="./logo.svg" alt="Logo" class="logo" />
+        <span>My Bank</span>
+      </div>
+      <aside id="sidebar">
+        <h1>Dodaj nową transakcję</h1>
+        <form class="my-form">
+          <div class="form-group">
+            <label>Data: </label>
+            <input id="date" type="text" name="date" />
+          </div>
+          <div class="form-group">
+            <label>Opis: </label>
+            <input id="description" type="text" name="description" />
+          </div>
+          <div class="form-group">
+            <label for="message">Kwota PLN: </label>
+            <input id="amount" type="number" name="amount" />
+          </div>
+          <input id="add-button" class="button" type="submit" value="Dodaj" />
+        </form>
+      </aside>
+      <article id="main">
+        <h1>Moje transakcje</h1>
+        <table class="my-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Data</th>
+              <th>Tytuł</th>
+              <th>Kwota</th>
+              <th>Autor</th>
+            </tr>
+          </thead>
+          <tbody id="transations-table-body"></tbody>
+        </table>
+      </article>
+      <div class="clr"></div>
+
+      <div id="footer">Copyright &copy; 2019 - Marek Czarnecki</div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
