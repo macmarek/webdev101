@@ -1,0 +1,73 @@
+<!-- podstawowy szablon html -->
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>hello</title>
+   
+    <!-- <link rel="stylesheet" href="css/styles.css?v=1.0" /> -->
+  </head>
+
+  <body>
+    <header>
+            <img src="./logo.svg" alt="Logo" width="20" height="20" />    
+        <h1>Moja</h1>
+            <hr />
+    </header>
+    <main>
+        <aside>
+            <form action="save.php" method="POST">
+                <div>
+                    <label>Imię</label>    
+                    <input type="text" />
+                </div>
+                <div>
+                    <label>email</label>    
+                    <input type="text" />
+                </div>
+                <div>
+                    <label>Wiek</label>    
+                    <input type="number" />
+                </div>
+        
+                <input type="submit" value="Zapisz"></input>
+            </form>
+            <hr />
+        </aside>
+        <article> 
+            <table>
+                <thead>
+                   <th>Imie</th>
+                   <th>Email</th>
+                   <th>Wiek</th> 
+                </thead>    
+                <tbody>
+                    <tr>
+                        <td>Marek</td>
+                        <td>marek@home.pl</td>
+                        <td>36</td>
+                    </tr>
+                    <tr>
+                        <td>Mateusz</td>
+                        <td>mateusz@home.pl</td>
+                        <td>27</td>
+                    </tr>
+                    <tr>
+                        <td>Ania</td>
+                        <td>ania@home.pl</td>
+                        <td>30</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+    </main>
+    <footer>
+        <hr />
+        to jest stopka
+    </footer>
+    
+    <!-- <script src="js/scripts.js"></script> -->
+  </body>
+</html>
