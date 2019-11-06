@@ -1,5 +1,6 @@
 //***************** DOM - document object model
 
+
 console.log(window);
 // window.alert(1);
 

@@ -15,7 +15,7 @@ function onSubmit(e) {
     msg.classList.add("error");
     msg.innerHTML = "Please enter all fields";
 
-    setTimeout(() => msg.remove(), 3000);
+            setTimeout(() => msg.remove(), 3000);
   } else {
     const li = document.createElement("li");
     li.appendChild(
